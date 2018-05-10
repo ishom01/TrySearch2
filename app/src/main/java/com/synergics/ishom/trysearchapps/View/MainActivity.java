@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        recyclerView = findViewById(R.id.recycle);
+        recyclerView = (RecyclerView) findViewById(R.id.recycle);
 
         //setting grid layout
         grid = new GridLayoutManager(getApplicationContext(), 2);
@@ -220,7 +220,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("");
 
-        toolbarTitle = findViewById(R.id.toolbarTittle);
+        toolbarTitle = (TextView) findViewById(R.id.toolbarTittle);
 
         searchView = (MaterialSearchView) findViewById(R.id.searchView);
 
