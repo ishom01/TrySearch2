@@ -209,6 +209,8 @@ public class MainActivity extends AppCompatActivity {
         items.add(new ResultBarangObj(11, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfSNIZg2a79s1bttC1WH_86kf0zHzR5qdb_jIcUI1wWbRQpv0d", "Barang 2", 10000));
         items.add(new ResultBarangObj(12, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfSNIZg2a79s1bttC1WH_86kf0zHzR5qdb_jIcUI1wWbRQpv0d", "Barang 3", 10000));
 
+        category();
+
         slimAdapter.updateData(items);
         slimAdapter.notifyDataSetChanged();
 
