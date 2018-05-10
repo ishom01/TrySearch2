@@ -1,30 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/item"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:padding="12dp"
+    android:padding="0.5dp"
+    android:id="@+id/item"
+    android:background="#737373"
     android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/image"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
         android:layout_width="match_parent"
-        android:layout_height="88dp" />
+        android:layout_height="178dp" />
 
-    <TextView
-        android:id="@+id/namaBarang"
-        android:text="NAMA_BARANG"
-        android:textColor="#343434"
-        android:textSize="16sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:padding="12dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/hargaBarang"
-        android:text="HARGA_BARANG"
-        android:textColor="@color/red"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/namaBarang"
+            android:text="NAMA_BARANG"
+            android:textColor="#343434"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/hargaBarangBelumDiskon"
+            android:text="HARGA_BARANG"
+            android:textSize="12sp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/hargaBarang"
+            android:text="HARGA_BARANG"
+            android:textSize="18sp"
+            android:textColor="@color/red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RatingBar
+                android:id="@+id/ratingBarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="3.5"
+                android:layout_marginRight="4dp"
+                android:progressBackgroundTint="#000000"
+                android:progressTint="#FFDF4A"
+                style="@style/Base.Widget.AppCompat.RatingBar.Small"/>
+
+            <TextView
+                android:id="@+id/ulasanBarang"
+                android:text="0 ulasan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnBeli"
+            android:background="@drawable/bg_red_button"
+            android:layout_marginTop="12dp"
+            android:text="Beli"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="38dp" />
+
+    </LinearLayout>
 
 </LinearLayout>

@@ -25,7 +25,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#ffffff"
-            android:textColorHint="#b2b2b2"
+            android:textColorHint="#ffffff"
+            app:searchBackground="@color/red"
             app:searchBackIcon="@drawable/ic_action_navigation_arrow_back_inverted"
             app:searchCloseIcon="@drawable/ic_action_navigation_close_inverted"
             app:searchSuggestionIcon="@drawable/ic_suggestion" />
